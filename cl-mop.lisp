@@ -74,10 +74,6 @@ It merely returns its results."
   "A deep copy of a general sequence is (copy-tree sequence)."
   (copy-tree object))
 
-(defmethod deep-copy ((object list))
-  "A deep copy of a list is (copy-tree list)"
-  (copy-tree object))
-
 (defmethod deep-copy ((object structure-object))
   "A deep copy of a structure-object is (copy-structure object)."
   (copy-structure object))
